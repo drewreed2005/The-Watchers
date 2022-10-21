@@ -80,7 +80,7 @@ if __name__ == "__main__":
         requests.put(url+"/like/"+num) # add to like count
         ) 
     responses.append(
-        requests.put(url+"/disliuke/"+num) # add to jeer count
+        requests.put(url+"/dislike/"+num) # add to jeer count
         ) 
 
     # obtain a random joke
