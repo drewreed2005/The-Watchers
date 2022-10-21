@@ -89,4 +89,4 @@ if __name__ == "__main__":
     printAlarm(getRandomAlarm())
     
     # Count of alarms
-    print("Slarms Count: " + str(countAlarms()))
+    print("Alarms Count: " + str(countAlarms()))

@@ -5,11 +5,11 @@ import random
 
 from model_alarm import *
 
-app_api = Blueprint('api', __name__,
+app_api2 = Blueprint('api', __name__,
                    url_prefix='/api/alarms')
 
 # API generator https://flask-restful.readthedocs.io/en/latest/api.html#id1
-api = Api(app_api)
+api2 = Api(app_api2)
 
 class AlarmsAPI:
     # not implemented
@@ -52,13 +52,13 @@ class AlarmsAPI:
             return jsonify(getAlarms(id))
 
     # building RESTapi resources/interfaces, these routes are added to Web Server
-    api.add_resource(_Create, '/create/<string:alarm>')
-    api.add_resource(_Read, '/')
-    api.add_resource(_ReadID, '/<int:id>')
-    api.add_resource(_ReadRandom, '/random')
-    api.add_resource(_ReadCount, '/count')
-    api.add_resource(_UpdateLike, '/like/<int:id>')
-    api.add_resource(_UpdateDislike, '/dislike/<int:id>')
+    api2.add_resource(_Create, '/create/<string:alarm>')
+    api2.add_resource(_Read, '/')
+    api2.add_resource(_ReadID, '/<int:id>')
+    api2.add_resource(_ReadRandom, '/random')
+    api2.add_resource(_ReadCount, '/count')
+    api2.add_resource(_UpdateLike, '/like/<int:id>')
+    api2.add_resource(_UpdateDislike, '/dislike/<int:id>')
     
 if __name__ == "__main__": 
     # server = "http://127.0.0.1:5000" # run local
