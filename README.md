@@ -12,7 +12,7 @@ The Work Watch is a web-based, customizable stopwatch program that assists users
 
 ## Other Repositories
 
-- Work Watch flask backend repository: [Click here](https://github.com/drewreed2005/The-Watchers)
+- Work Watch FastPages frontend repository: [Click here](https://github.com/jagermi3ster/theworkwatch)
 
 ## Code Student Resources
 
