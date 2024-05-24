@@ -1,25 +1,26 @@
-## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
-Runtime link: https://portfolio.nighthawkcodingsociety.com/
-### Idea
-Starter code should be fun and practical.
-### Visual thoughts
-#### Organize with Bootstrap menu 
-#### Add some color and fun through VANTA Visuals (birds, halo, solar, net)
-#### Show some practical and fun links (hrefs) like Twitter, Git, Youtube
-#### Show project specific links (hrefs) per page
+# Work Watch Backend Repository
 
-### Implementation progress (August 13th, 2021)
-#### Project entry point is main.py, this enables Flask Web App and provides capability to renders templates (HTML files)
-#### The main.py is the  Web Server Gateway Interface, essentially it contains a HTTP route and HTML file relationship.  The Python code constructs WSGI relationships for index, kangaroos, walruses, and hawkers.
-#### The project structure contains many directories and files.  The template directory (containing html files) and static directory (containing js files) are common standards for HTML coding.  Static files can be pictures and videos, in this project they are mostly javascript backgrounds.
-#### WSGI templates: index.html, kangaroos.html, ... are aligned with routes in main.py.
-#### Other templates support WSGI templates.  The base.html template contains common Head, Style, Body, Script definitions.  WSGI templates often "include" or "extend" these templates.  This is a way to reuse code.
-#### The VANTA javascript statics (backgrounds) are shown and defaulted in base.html (birds), but are block replaced as needed in other templates (solar, net, ...)
-#### The Bootstrap Navbar code is in navbar.html. The base.html code includes navbar.html.  The WSGI html files extend base.html files.  This is a process of management and correlation to optimize code management.  For instance, if the menu changes discovery of navbar.html is easy, one change reflects on all WSGI html files. 
-#### Jinja2 variables usage is to isolate data and allow redefinitions of attributes in templates.  Observe "{% set variable = %}" syntax for definition and "{{ variable }}" for reference.
-#### The base.html uses combination of Bootstrap grid styling and custom CSS styling.  Grid styling in observe with the "<Col-3>" markers.  A Bootstrap Grid has a width of 12, thus four "Col-3" markers could fit on a Grid row.
-#### A key purpose of this project is to embed links to other content.  The "href=" definition embeds hyperlinks into the rendered HTML.  The base.html file shows usage of "href={{github}}", the "{{github}}" is a Jinja2 variable.  Jinja2 variables are pre-processed by Python, a variable swap with value, before being sent to the browser.
+This repository acts as the backend for the Work Watch web program. It was cloned from [this repository](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter) and adapted according to project needs.
 
-### IDE management (things that happened beyond plan)
-#### Recall on ".gitignore" solution to the pains of temporary files.  Start a ".gitignore" and avoid promoting temporary files to Git, for instance IDE xml files.
-#### A project needs to establish a "requirements.txt" to keep track of Python packages used by the project.  This help in other IDEs and Deployment.  IntelliJ has menu Tool -> Sync Python Requirements to start file. 
+The Work Watch is a web-based, customizable stopwatch program that assists users in organizing and staying focused during work sessions. In conjunction with to-do list functionality, the Work Watch allows users to establish the frequency and duration of breaks in their work sessions. When a break should occur and end, an alarm is played depending on which one was voted to be the favorite among users, with votes stored in a backend database and compared when the site is loaded.
+
+## Runtime Links
+
+- Work Watch program: [Click here](https://jagermi3ster.github.io/theworkwatch/workwatch)
+- Work Watch alarm API: [Clich here](https://jagermi3ster.github.io/theworkwatch/api/alarms)
+- Work Watch alarm sounds (Soundcloud): [Click here](https://on.soundcloud.com/at4y7TmUhzLGoRsg7)
+
+## Other Repositories
+
+- Work Watch flask backend repository: [Click here](https://github.com/drewreed2005/The-Watchers)
+
+## Code Student Resources
+
+This was our first computer science project, so we were trying our best to utilize GitHub features like issues to the best of our abilites. Here's a link to our early [Scrum Board](https://github.com/drewreed2005/The-Watchers/issues/1). Links within show weekly progress stored in issues.
+
+## Contributors
+
+- Scrum Master: [Drew Reed](https://github.com/drewreed2005)
+- Frontend Developer: [Jagger Klein](https://github.com/jagermi3ster)
+- Backend Developer: [Devon Shepherd](https://github.com/DreamerBlock)
+- Swing/DevOps: [Trent Cardall](https://github.com/trentcardall) 
